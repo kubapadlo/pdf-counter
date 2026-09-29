@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulamin newslettera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="landing" id="landing">
+    <div class="card doc-card">
+      <div class="doc-icon" aria-hidden="true">PDF</div>
+      <h1>Regulamin newslettera</h1>
+      <p class="muted">regulamin_newsletter.pdf</p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="open-btn">Otwórz PDF</button>
+        <a class="btn" href="regulamin_newsletter.pdf" download data-download>Pobierz PDF</a>
+      </div>
+    </div>
+  </main>
+
+  <section class="viewer" id="viewer" hidden>
+    <header class="topbar">
+      <h1>Regulamin newslettera</h1>
+      <div class="actions">
+        <button type="button" class="btn" id="close-btn">Zamknij</button>
+        <a class="btn btn-primary" href="regulamin_newsletter.pdf" download data-download>Pobierz PDF</a>
+      </div>
+    </header>
+    <div class="pdf-frame" id="pdf-frame"></div>
+  </section>
+
+  <script src="counter.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

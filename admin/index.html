@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Statystyki PDF</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Statystyki PDF</h1>
+        <p class="muted">regulamin_newsletter.pdf · <a href="../">strona główna</a></p>
+      </div>
+      <span class="status" id="status">łączenie…</span>
+    </header>
+
+    <section class="tiles">
+      <article class="tile">
+        <span class="tile-label">Wejścia w PDF</span>
+        <strong class="tile-value" id="views">–</strong>
+        <span class="tile-sub">Dziś: <b id="views-today">–</b></span>
+        <span class="tile-sub">Ten miesiąc: <b id="views-month">–</b></span>
+      </article>
+      <article class="tile">
+        <span class="tile-label">Pobrania PDF</span>
+        <strong class="tile-value" id="downloads">–</strong>
+        <span class="tile-sub">Dziś: <b id="downloads-today">–</b></span>
+        <span class="tile-sub">Ten miesiąc: <b id="downloads-month">–</b></span>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Ostatnie 7 dni</h2>
+      <table>
+        <thead>
+          <tr><th>Dzień</th><th>Wejścia</th><th>Pobrania</th></tr>
+        </thead>
+        <tbody id="recent-days"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Ostatnie 6 miesięcy</h2>
+      <table>
+        <thead>
+          <tr><th>Miesiąc</th><th>Wejścia</th><th>Pobrania</th></tr>
+        </thead>
+        <tbody id="recent-months"></tbody>
+      </table>
+    </section>
+
+    <p class="muted small">Odświeżanie co minutę · ostatnia aktualizacja: <span id="updated">—</span></p>
+  </main>
+
+  <script src="../counter.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
